@@ -6,12 +6,19 @@ const app = express();
 app.set('view engine', 'ejs');
 
 app.get('/', function(req,res){
+
     let today = new Date();
-    if (today.getDay() === 8 || today.getDay() === 0 ) {
-        res.send('yay its the weekend!');
-    }else{
-        res.send('lame, its work, for anyone but me...')
-    }
+    let curentDay = today.getDay();
+    let day = ['Monday', 'Tuesday', 'Wedensday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    let x = '';
+
+
+    day.forEach((day, index)=>{
+        if(index == new Date().getDay()){
+            return x = day;
+        }
+    })
+    res.render('list',{kindOfDay:x});
 });
 
 app.listen(3000, function(){
