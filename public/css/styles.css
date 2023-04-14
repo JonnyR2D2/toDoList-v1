@@ -27,6 +27,7 @@ html{
     padding: 10px;
     color:white;
     font-family: 'Lilita One', cursive;
+    text-shadow: 5px 5px 15px -5px rgba(0,0,0,1);
 }
 
 .item{
