@@ -31,11 +31,10 @@ app.post('/', function(req,res){
     }else{
 
     Items.push(newItem);
+    console.log(newItem);
+    res.redirect('/');
     }
 
-    console.log(newItem);
-
-    res.redirect('/');
 })
 
 
