@@ -21,13 +21,19 @@ html{
     box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
 }
 
+
 #heading{
     background-color: #A683E3;
     text-align:center;
     padding: 10px;
+}
+
+h1{
+
     color:white;
     font-family: 'Lilita One', cursive;
-    text-shadow: 5px 5px 15px -5px rgba(0,0,0,1);
+    text-shadow: 2px 2px 2px black;
+    
 }
 
 .item{

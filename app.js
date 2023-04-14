@@ -25,7 +25,13 @@ app.post('/', function(req,res){
 
     let newItem = req.body.addItem;
 
+    if(newItem === ''){
+
+        return false;
+    }else{
+
     Items.push(newItem);
+    }
 
     console.log(newItem);
 
